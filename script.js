@@ -1,11 +1,11 @@
 const travelData = [
     { id: 1, title: 'Milano Games Week 2k24', country: 'Italia', date: '2024-11-23', organizer: 'Marimba', price: '~€60', img: 'img1.jpg', days: '1 giorno', },
-    { id: 2, title: 'Ski Weekend 2k24', country: 'Italia', date: '2024-12-10', organizer: 'Foxy & Marimba', price: '€?', img: 'image.jpg', days: '2 giorni', },
+    { id: 2, title: 'Ski Weekend 2k24', country: 'Italia', date: '2024-12-10', organizer: 'Foxy & Marimba', price: '€260', img: 'image.jpg', days: '2 giorni', },
     { id: 3, title: 'Milano Games Week 2k25', country: 'Italia', date: '2025-11-23', organizer: 'Marimba', price: '~€60 ', img: 'img1.jpg', days: '1 giorno', },
-    { id: 4, title: 'Ski Weekend 2k25', country: 'Italia', date: '2025-12-10', organizer: 'Foxy & Marimba', price: '€?', img: 'image.jpg', days: '2 giorni', },
+    { id: 4, title: 'Ski Weekend 2k25', country: 'Italia', date: '2025-12-10', organizer: 'Foxy & Marimba', price: '€260', img: 'image.jpg', days: '2 giorni', },
     { id: 5, title: 'Croatia 2k26', country: 'Croazia', date: '2026-07-01', organizer: 'Marimba', price: '€400', img: 'img5.jpg', days: '10 giorni', },
     { id: 6, title: 'Milano Games Week 2k26', country: 'Italia', date: '2026-11-23', organizer: 'Marimba', price: '~€60', img: 'img1.jpg', days: '1 giorno', },
-    { id: 7, title: 'Ski Week', country: 'Italia', date: '2026-12-01', organizer: 'Bebbesi & Marimba', price: '€?', img: 'img7.png', days: '7 giorni', },
+    { id: 7, title: 'Ski Week', country: 'Italia', date: '2026-12-01', organizer: 'Bebbesi, Marimba & Foxy', price: '€1000', img: 'img7.png', days: '7 giorni', },
     { id: 8, title: 'Japan 2k27', country: 'Giappone', date: '2027-03-25', organizer: 'Marimba', price: '€5000', img: 'img4.jpeg', days: '20 giorni',},
     { id: 9, title: 'Rome Meetup 2k24', country: 'Italia', date: '2024-06-13', organizer: 'Bebbesi', price: '€50', img: 'img9.jpeg', days: '1 giorno', }
 ];
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTimers();
     setInterval(() => {
         updateTimers();
-        // Riorganizza le card in base alla data
+
         const cardsAbreve = document.getElementById('travel-cards-a-breve');
         const cardsProgrammati = document.getElementById('travel-cards-programmati');
         const cardsTerminati = document.getElementById('travel-cards-terminati');
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cardsAbreve.appendChild(card);
             }
         });
-    }, 60000); // Aggiorna ogni minuto
+    }, 60000);
 });
 
 const createTravelCard = (travel) => {
